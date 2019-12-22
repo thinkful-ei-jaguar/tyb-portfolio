@@ -8,44 +8,49 @@
     <link href="https://fonts.googleapis.com/css?family=Eczar|Open+Sans|Pacifico&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css" integrity="sha384-REHJTs1r2ErKBuJB0fCK99gCYsVjwxHrSU0N7I1zl9vZbggVJXRMsv/sLlOAGb4M" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="/index.css">
-    <title>Portfolio Greybox TYB</title>
+    <title>TYB</title>
 </head>
 <body>
     <nav role="navigation">
         <ul class="nav">
-            <li>About Me</li>
-            <li>Projects</li>
-            <li>Contact Me</li>
+            <li><a href="#aboutMe">About Me</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact Me</a></li>
         </ul>
-        <i class="fas fa-bars"></i>
+        <i class="fas fa-bars fa-lg"></i>
     </nav>
-    <main role="main">
+    <main role="main"> 
         <header role="banner">
             <h1>Taylor Y. Bradshaw</h1>
             <p class="headline">I am a web developer who uses their left and right brain to create applications with strong foundations.</p>
         </header>
-
-        <section class="aboutMe">
+        <section class="aboutMe" id="aboutMe">
             <h2>About Me</h2>
             <p>I am a burgeoning full-stack web developer based in Raleigh, NC. I got my first taste of coding while earning my English degree in college. My degree was focused in professional writing and editing, and part of that curriculum introduced me to basic HTML and CSS coding which I really enjoyed. I have since tried other potential career paths, but I rediscovered coding, and I decided to give it a real shot. </p>
             <p>What’s really sold me on the idea of coding is the fact that you get a tangible result from your work and that it is a field where you get to work through problems with a team around you. I’ve got a craving for creative outlets, including many forms of storytelling and art, but I also enjoy getting to employ the side of me that enjoys working with technology.</p>
             <p>When I am not coding, I am either hanging out with my husband and playing with my little fluff pup, or I am creatively solving fantasy world challenges with my friends playing Dungeon and Dragons. As you can see, I’m an all-around nerd!</p>
         </section>
 
-        <section class="projects">
-            <h2>Projects</h2>
-            <img src="images/quizappss.png" alt="Quiz App Screenshot" class="screenshot">
-            <img src="images/quizappss-small.png" alt="Quiz App Small Screenshot" class="small-screenshot">
-            <h3>The Commonly Misheard Lyrics Quiz</h3>
-            <section class="language">
-                <i class="fab fa-html5 fa-2x"></i>
-                <i class="fab fa-css3-alt fa-2x"></i>
-                <i class="fab fa-js-square fa-2x"></i>
-            </section>
-            <p>A lot of popular songs are made infamous by lyrics that people often mishear. This simple quiz application asks the user 5 questions that are examples of these misheard lyrics. Take this quiz and see if you can identify the real lyrics!</p>
-            <div class="projectLinks">
-                <a href="https://stronghearth.github.io/taylorB-quiz-app/" target="_/blank">Live App</a>
-                <a href="https://github.com/stronghearth/taylorB-quiz-app" target="_/blank">Repo</a>
+        <section class="projects" id="projects">
+            
+            <h2 class="projectHeading">Projects</h2>
+
+            <div class="individualProject">
+                <img src="images/quizappss-small.png" alt="Quiz App Mobile Screenshot" class="small-screenshot">
+                <img src="images/quizappss.png" alt="Quiz App Screenshot" class="screenshot">
+                <div class="projInfo">
+                <h3 class="projectName">The Commonly Misheard Lyrics Quiz</h3>
+                <div class="language">
+                    <i class="fab fa-html5 fa-2x" aria-disabled="true"></i>
+                    <i class="fab fa-css3-alt fa-2x" aria-disabled="true"></i>
+                    <i class="fab fa-js-square fa-2x" aria-disabled="true"></i>
+                </div>
+                <p class="projDesc">A lot of popular songs are made infamous by lyrics that people often mishear. This simple quiz application asks the user 5 questions that are examples of these misheard lyrics. Take this quiz and see if you can identify the real lyrics!</p>
+                <div class="projectLinks">
+                    <a href="https://stronghearth.github.io/taylorB-quiz-app/" target="_/blank">Live App</a>
+                    <a href="https://github.com/stronghearth/taylorB-quiz-app" target="_/blank">Repo</a>
+                </div>
+                </div>
             </div>
         </section>
 
@@ -53,11 +58,10 @@
             <h3>More to Come!</h3>
         </section>
     </main>
-    <footer role="content-info">
+    <footer role="content-info" id="contact">
         <a href="https://www.linkedin.com/in/taylorybradshaw/" target="_/blank"><i class="fab fa-linkedin fa-2x social"></i></a>
         <a href="https://github.com/stronghearth" target="_/blank"><i class="fab fa-github-square fa-2x social"></i></a>
         <a href="mailto:taylordyoung1@gmail.com" target="_/blank"><i class="fas fa-envelope-square fa-2x social"></i></a>
-
     </footer>
 </body>
 </html>
