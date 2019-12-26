@@ -59,6 +59,12 @@ section.languages {
     justify-content: space-around;
 }
 
+section.projectLinks {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
 section {
     padding: 5px;
     background-color: #bbb;
