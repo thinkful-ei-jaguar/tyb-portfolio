@@ -47,10 +47,7 @@ main {
 }
 
 section.projects {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
 }
 
 section.languages {
@@ -65,6 +62,7 @@ section.projectLinks {
     justify-content: space-evenly;
     align-items: center;
 }
+
 section {
     padding: 5px;
     background-color: #bbb;
