@@ -1,9 +1,7 @@
-/*styling optimized for mobile 320 px*/
-
 * {
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
-  }
+}
 
 
 h1, h2, h3 {
@@ -18,49 +16,13 @@ nav {
     right: 0;
 }
 
-ul.nav {
-    list-style: none;
-    display: none;
-}
-
 nav, footer {
     padding: 1% 0;
     background-color: #aaa;
+}
+
+footer {
     text-align: center;
-}
-
-.fa-bars {
-    float: right;
-    display: inline;
-    margin-right: 10px;
-}
-
-header {
-    padding: 25px;
-}
-
-main {
-    max-width: 95%;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-}
-
-section.projects {
-    text-align: center;
-}
-
-section.languages {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
-
-section.projectLinks {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
 }
 
 section {
@@ -84,3 +46,98 @@ img.social, img.icon {
 footer {
     margin-bottom: 10px;
 }
+
+@media screen and (max-width: 750px) {
+
+main {
+    max-width: 95%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    padding: 25px;
+}
+
+ul.nav {
+    display: none;
+    list-style: none;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.fa-bars {
+    margin-right: 10px;
+}
+
+section.projects {
+    text-align: center;
+}
+
+section.languages {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+section.projectLinks {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+}
+
+@media screen and (min-width: 750px) {
+
+    main {
+        max-width: 95%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    header {
+        padding: 25px;
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    ul.nav {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    
+    .fa-bars {
+        display: none;
+    }
+    
+    section.projects {
+        text-align: center;
+    }
+    
+    section.languages {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    
+    section.projectLinks {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+}
+
