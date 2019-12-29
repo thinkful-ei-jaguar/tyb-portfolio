@@ -97,7 +97,6 @@ section.projectLinks {
 @media screen and (min-width: 750px) {
 
     main {
-        max-width: 95%;
         margin: auto;
         display: flex;
         flex-direction: column;
