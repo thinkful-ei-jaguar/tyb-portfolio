@@ -5,9 +5,8 @@ const greeting = "hello, this is the script you've embeded"
 console.log(greeting);
 //basic scroll function
 $(document).ready(function(){
+  //basic hamburger menu event-listener
     let isOpen = 0;
-    let menuHeight = $('.js-menu').css('height');
-    let menuHeightInverse = "-" + menuHeight;
 
     $("nav").on('click', '.nav-toggle', function(event) {
         if (isOpen !== 0){
@@ -23,7 +22,7 @@ $(document).ready(function(){
             isOpen--;
         }    
     });
-
+    //basic scroll event listener
     $(".js-scroll").on('click', function(event) {
 
       if (this.hash !== "") {
