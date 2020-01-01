@@ -28,6 +28,11 @@ a:link, a:visited {
     color: #E68500;
 }
 
+.fa-times, .fa-bars {
+    color: #FFFFFF;
+    margin-right: 10px;
+}
+
 a:hover{
     text-decoration: underline;
 }
@@ -51,6 +56,10 @@ a:hover{
     color: #E68500;
 }
 
+.hidden {
+    display: none;
+}
+
 
 @media screen and (max-width: 450px) {
     body {
@@ -70,13 +79,9 @@ a:hover{
         flex-direction: row;
         justify-content: flex-end;
     }
-    ul.nav {
+    /*ul.nav {
         display: none;
-    }
-    .fa-bars {
-        margin-right: 10px;
-        color: #FFFFFF;
-    }
+    }*/
     header {
         padding: 25px;
     }
