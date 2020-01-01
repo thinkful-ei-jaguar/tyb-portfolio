@@ -13,13 +13,13 @@
 <body>
     <nav role="navigation">
         <ul class="nav">
-            <li><a href="#aboutMe">About Me</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact Me</a></li>
+            <li><a href="#aboutMe" class="js-scroll">About Me</a></li>
+            <li><a href="#projects" class="js-scroll">Projects</a></li>
+            <li><a href="#contact" class="js-scroll">Contact Me</a></li>
         </ul>
         <i class="fas fa-bars fa-lg"></i>
     </nav>
-    <main role="main"> 
+    <main role="main" id="top"> 
         <header role="banner">
             <h1>Taylor Y. Bradshaw</h1>
             <p class="headline">I am a web developer who uses their left and right brain to create applications with strong foundations.</p>
@@ -56,6 +56,7 @@
 
         <section class="building">
             <h3>More to Come!</h3>
+            <a href="#top" class="return js-scroll">Back to Top</a>
         </section>
     </main>
     <footer role="content-info" id="contact">
@@ -63,5 +64,7 @@
         <a href="https://github.com/stronghearth" target="_/blank"><i class="fab fa-github-square fa-2x social"></i></a>
         <a href="mailto:taylordyoung1@gmail.com" target="_/blank"><i class="fas fa-envelope-square fa-2x social"></i></a>
     </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="index.js"></script>
 </body>
 </html>
