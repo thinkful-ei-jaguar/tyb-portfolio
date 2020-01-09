@@ -2,6 +2,23 @@
     box-sizing: border-box;
   }
 
+body {
+    background-image: url("images/headerbg.png");
+    background-repeat: no-repeat;
+    background-color: #033859;
+}
+
+header {
+    padding: 40px;
+}
+
+main {
+    max-width: 95%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
 h1 {
     font-family: 'Eczar', serif;
     text-align: center;
@@ -18,12 +35,89 @@ ul {
     list-style: none;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    font-size: 25px;
+}
+
+nav {
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 1% 0;
+    background-color: #032940;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
+}
+
+li {
+    padding: 15px;
 }
 
 p {
     font-family: 'Open Sans', sans-serif;
+    padding: 5px;
+    line-height: 1.5;
+}
+
+p.headline {
+    display: none;
+}
+
+section.projects, .individualProject, .projectLinks, .building {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.language {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+footer {
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.projectLinks {
+    padding: 10px;
+    display: flex;
+    align-self: center;
+}
+
+section {
+    padding: 5px;
+    background-color: #F6F6F6;
+}
+
+section:nth-child(even) {
+    background-color: #ddd;
+}
+
+img.screenshot {
+    display: none;
+}
+
+img.small-screenshot {
+    max-width: 90%;
+    border-style: solid;
+    border-color: #E68500;
+    border-width: 3px;
+}
+
+img.social, img.icon {
+    padding: 5px;
 }
 
 a:link, a:visited {
@@ -70,10 +164,9 @@ a:hover{
 }
 
 
-@media screen and (max-width: 650px) {
+@media screen and (min-width: 600px) {
     body {
-        background-image: url("images/headerbg.png");
-        background-repeat: no-repeat;
+        background-image: none;
         background-color: #033859;
     }
     nav {
@@ -84,185 +177,15 @@ a:hover{
         right: 0;
         padding: 1% 0;
         background-color: #032940;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
-    ul {
-        font-size: 25px;
-    }
-    header {
-        padding: 40px;
-    }
-    p.headline {
-        display: none;
-    }
-    footer {
-        padding: 5px;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: center;
-        margin-top: 10px;
-    }
-    main {
-        max-width: 95%;
-        margin: auto;
-        display: flex;
-        flex-direction: column;
-    }
-    section.projects, .individualProject, .projectLinks, .building {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    .language {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-    }
-    p {
-        padding: 5px;
-        line-height: 1.5;
-    }
-    .projectLinks {
-        padding: 10px;
-        display: flex;
-        align-self: center;
-    }
-    section {
-        padding: 5px;
-        background-color: #F6F6F6;
-    }
-    section:nth-child(even) {
-        background-color: #ddd;
-    }
-
-    img.screenshot {
-        display: none;
-    }
-    img.small-screenshot {
-        max-width: 90%;
-        border-style: solid;
-        border-color: #E68500;
-        border-width: 3px;
-    }
-    img.social, img.icon {
-        padding: 5px;
-    }
-    
-}
-
-@media screen and (min-width: 700px) {
-    body {
-        background-color: #033859;
-    }
-    header {
-        background-image: url("images/headerbg.png");
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-        height: 500px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    h1 {
-        font-size: 45px;
-    }
-    h2 {
-        font-size: 35px;
-    }
-    h3 {
-        font-size: 30px;
-    }
-    p.headline {
-        font-style: italic;
-        font-size: 20px;
-        padding: 25px;
-        text-align: center;
-    }
-    footer {
-        padding: 5px;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: center;
-        margin-top: 10px;
-    }
-    main {
-        max-width: 100%;
-        margin: auto;
-        display: flex;
-        flex-direction: column;
-    }
-    section.projects, .individualProject, .projectLinks, .building {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    .language {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: center;
-    }
-    p {
-        padding: 20px;
-        line-height: 1.5;
-        font-size: 20px;
-    }
-    .projectLinks {
-        font-size: 25px;
-        padding: 10px;
-        display: flex;
-        align-self: center;
-    }
-    section {
-        padding: 5px;
-        background-color: #bbbbbb;
-    }
-    section:nth-child(even) {
-        background-color: #ddd;
-    }
-    img.small-screenshot {
-        max-width: 80%;
-        border-style: solid;
-        border-color: #E68500;
-        border-width: 3px;
-    }
-    img.social, img.icon {
-        padding: 5px;
-    }
-    .fa-2x {
-        font-size: 50px;
-    }
-}
-
-@media screen and (min-width: 700px) {
-    body {
-        background-color: #033859;
-    }
-    nav {
-        position: fixed;
-        z-index: 10;
-        top: 0;
-        left: 0;
-        right: 0;
     }
     ul.nav {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
+       display: flex;
+       flex-direction: row;
+       justify-content: space-around;
+       width: 100%;
     }
-    nav {
-        padding: 1% 0;
-        background-color: #032940;
-        text-align: center;
+    li {
+        padding: 0px;
     }
     .fa-bars {
         display: none;
@@ -339,6 +262,7 @@ a:hover{
         background-color: #ddd;
     }
     img.screenshot {
+        display: flex;
         max-width: 80%;
         border-style: solid;
         border-color: #E68500;
@@ -357,36 +281,13 @@ a:hover{
         background-color: #033859;
     }
     nav {
-        position: fixed;
-        z-index: 10;
-        top: 0;
-        left: 0;
-        right: 0;
-    }
-    ul.nav {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-    }
-    nav {
-        padding: 1% 0;
-        background-color: #032940;
-        text-align: center;
         font-size: 18px;
     }
     .fa-bars {
         display: none;
     }
     header {
-        background-image: url("images/headerbg.png");
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
         height: 1000px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
     }
     h1 {
         font-size: 55px;
@@ -398,6 +299,7 @@ a:hover{
         font-size: 25px;
     }
     p.headline {
+        display: flex;
         font-style: italic;
         font-size: 30px;
         padding: 25px;
@@ -405,10 +307,6 @@ a:hover{
     }
     footer {
         padding: 5px;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: center;
         margin-top: 10px;
     }
     main {
